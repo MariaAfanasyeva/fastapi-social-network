@@ -1,0 +1,41 @@
+[tool.poetry]
+name = "fastapi-tutorial"
+version = "0.1.0"
+description = ""
+authors = ["Maryia Afanasyeva <masha.afanaseva0192@gmail.com>"]
+readme = "README.md"
+packages = [{include = "fastapi_tutorial"}]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+fastapi = "^0.104.1"
+uvicorn = "^0.24.0.post1"
+sqlalchemy = "1.4.42"
+databases = "^0.8.0"
+aiosqlite = "^0.19.0"
+python-dotenv = "^1.0.0"
+pydantic-settings = "^2.1.0"
+rich = "^13.7.0"
+asgi-correlation-id = "^4.2.0"
+python-json-logger = "^2.0.7"
+python-jose = "^3.3.0"
+python-multipart = "^0.0.6"
+passlib = "^1.7.4"
+bcrypt = "^4.1.2"
+sib-api-v3-sdk = "^7.6.0"
+aiofiles = "^23.2.1"
+
+[tool.isort]
+profile = "black"
+
+[tool.poetry.group.dev.dependencies]
+ruff = "^0.1.7"
+black = "^23.11.0"
+isort = "^5.12.0"
+pytest = "^7.4.3"
+httpx = "^0.25.2"
+pytest-mock = "^3.12.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
